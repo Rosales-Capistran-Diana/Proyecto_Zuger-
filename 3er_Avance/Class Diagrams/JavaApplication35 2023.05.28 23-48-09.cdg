@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JavaApplication35">
+  <ClassDiagramComponents>
+    <Class name="Casa" package="javaapplication35" visibility="public" xPosition="255.0" yPosition="159.0">
+      <Fields>
+        <Field name="situaciones" type="Situacion[]" visibility="private"/>
+        <Field name="indiceSituacionActual" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSituacionActual" returnType="Situacion" visibility="public"/>
+        <Method name="avanzarSituacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Escuela" package="javaapplication35" visibility="public" xPosition="439.0" yPosition="20.0">
+      <Fields>
+        <Field name="situaciones" type="Situacion[]" visibility="private"/>
+        <Field name="indiceSituacionActual" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSituacionActual" returnType="Situacion" visibility="public"/>
+        <Method name="avanzarSituacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="JavaApplication35" package="javaapplication35" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Parque" package="javaapplication35" visibility="public" xPosition="1107.0" yPosition="218.0">
+      <Fields>
+        <Field name="situaciones" type="Situacion[]" visibility="private"/>
+        <Field name="indiceSituacionActual" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSituacionActual" returnType="Situacion" visibility="public"/>
+        <Method name="avanzarSituacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SituacionesCasa" package="javaapplication35" visibility="public" xPosition="37.0" yPosition="478.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="SituacionesEscuela" package="javaapplication35" visibility="public" xPosition="37.0" yPosition="373.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="SituacionesParque" package="javaapplication35" visibility="public" xPosition="37.0" yPosition="254.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="SituacionesTrabajo" package="javaapplication35" visibility="public" xPosition="37.0" yPosition="135.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Trabajo" package="javaapplication35" visibility="public" xPosition="242.0" yPosition="383.0">
+      <Fields>
+        <Field name="situaciones" type="Situacion[]" visibility="private"/>
+        <Field name="indiceSituacionActual" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSituacionActual" returnType="Situacion" visibility="public"/>
+        <Method name="avanzarSituacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="VentanaJuego" package="javaapplication35" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="frame" type="JFrame" visibility="private"/>
+        <Field name="lblPuntosInteligencia" type="JLabel" visibility="private"/>
+        <Field name="lblPuntosHabilidadSocial" type="JLabel" visibility="private"/>
+        <Field name="lblPuntosPereza" type="JLabel" visibility="private"/>
+        <Field name="txtDescripcion" type="JTextArea" visibility="private"/>
+        <Field name="txtPregunta" type="JTextArea" visibility="private"/>
+        <Field name="btnDecision1" type="JButton" visibility="private"/>
+        <Field name="btnDecision2" type="JButton" visibility="private"/>
+        <Field name="btnDecision3" type="JButton" visibility="private"/>
+        <Field name="puntosInteligencia" type="int" visibility="private"/>
+        <Field name="puntosHabilidadSocial" type="int" visibility="private"/>
+        <Field name="puntosPereza" type="int" visibility="private"/>
+        <Field name="escenario" type="Escenario" visibility="private"/>
+        <Field name="situacionActual" type="Situacion" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="mostrarVentana" returnType="void" visibility="public"/>
+        <Method name="actualizarVentana" returnType="void" visibility="private"/>
+        <Method name="tomarDecision" returnType="void" visibility="private">
+          <Argument type="String" name="decision"/>
+          <Argument type="int" name="puntos"/>
+        </Method>
+        <Method name="actualizarPuntos" returnType="void" visibility="private">
+          <Argument type="int" name="puntos"/>
+          <Argument type="JLabel" name="lblPuntos"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Situacion" package="javaapplication35" visibility="public" xPosition="887.0" yPosition="30.0">
+      <Methods>
+        <Method name="getDescripcion" returnType="String" visibility="package"/>
+        <Method name="getPregunta" returnType="String" visibility="package"/>
+        <Method name="getDecision1" returnType="String" visibility="package"/>
+        <Method name="getDecision2" returnType="String" visibility="package"/>
+        <Method name="getDecision3" returnType="String" visibility="package"/>
+        <Method name="getPuntos1" returnType="int" visibility="package"/>
+        <Method name="getPuntos2" returnType="int" visibility="package"/>
+        <Method name="getPuntos3" returnType="int" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="Escenario" package="javaapplication35" visibility="public" xPosition="678.0" yPosition="310.0">
+      <Methods>
+        <Method name="getSituacionActual" returnType="Situacion" visibility="package"/>
+        <Method name="avanzarSituacion" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="javaapplication35.Trabajo" target="javaapplication35.Situacion" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javaapplication35.Escenario" target="javaapplication35.Situacion" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="javaapplication35.Escuela" target="javaapplication35.Escenario"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="javaapplication35.Trabajo" target="javaapplication35.Escenario"/>
+    <UseRelation source="javaapplication35.Escuela" target="javaapplication35.Situacion" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="escenario" source="javaapplication35.VentanaJuego" target="javaapplication35.Escenario" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="situacionActual" source="javaapplication35.VentanaJuego" target="javaapplication35.Situacion" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="javaapplication35.Parque" target="javaapplication35.Situacion" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="javaapplication35.Casa" target="javaapplication35.Escenario"/>
+    <UseRelation source="javaapplication35.Casa" target="javaapplication35.Situacion" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="javaapplication35.Parque" target="javaapplication35.Escenario"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
